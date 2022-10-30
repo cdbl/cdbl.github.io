@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   //do work
   var nav_link_start = '<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">' +
           '<div class="container-fluid">' +
-            '<a class="navbar-brand" href="#">[CHWAME]</a>' +
+            '<a class="navbar-brand" href="index.html">[CHWAME]</a>' +
             '<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">' +
               '<span class="navbar-toggler-icon"></span>' +
             '</button>' +
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   const currentLocation = location.href;
   const menuItem = document.querySelectorAll('a');
   const menuLength = menuItem.length
-  for (i = 0; i<menuLength; i++){
+  for (i = 1; i<menuLength; i++){
     if(menuItem[i].href === currentLocation ){
       menuItem[i].className = "nav-link active"
     }
