@@ -8,18 +8,22 @@ document.addEventListener("DOMContentLoaded", function(event) {
             '</button>' +
             '<div class="collapse navbar-collapse" id="navbarCollapse">' +
               '<ul class="navbar-nav me-auto mb-2 mb-md-0">';
+
+
   var nav_link_end = '</ul></div></div></nav>';
 
-  var links = [
-      {link:"/", title:"Home"},
-      {link: "hobbies.html", title: "My Hobbies"},
-      {link: "stories.html", title: "My Stories"}
-  ];
-
   var htmlLinks = "";
-  links.forEach(function(value){
-      htmlLinks += '<li class="nav-item"><a href="' + value.link + '" class="nav-link">' + value.title + '</a></li>';
-  })
+
+  htmlLinks += '<li class="nav-item"><a href="/" class="nav-link">Home</a></li>';
+  htmlLinks += '<li class="nav-item"><a href="hobbies.html" class="nav-link">My Hobbies</a></li>';
+  htmlLinks += '<li class="nav-item dropdown"><a href="/stories/" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">My Stories</a>';
+  htmlLinks += '<ul class="dropdown-menu">';
+  htmlLinks += '<li><a class="dropdown-item" href="/stories/lucas-the-elf.html">Lucas The Elf</a></li>';
+  htmlLinks += '<li><a class="dropdown-item" href="/stories/the-invasion.html">The Invasion</a></li>';
+  htmlLinks += '<li><a class="dropdown-item" href="/stories/the-freaky-cave.html">The Freaky Cave</a></li>';
+  htmlLinks += '</ul>';
+  htmlLinks += '</li>';
+              
 
   document.getElementById("header").innerHTML = nav_link_start + htmlLinks + nav_link_end;
 
