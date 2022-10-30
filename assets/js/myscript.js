@@ -33,8 +33,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
   const menuLength = menuItem.length
   for (i = 1; i<menuLength; i++){
     if(menuItem[i].href === currentLocation ){
-      if(menuItem[i].className() == "dorpdown-item"){
-        menuItem[i].className = "dorpdown-item active"
+      if(menuItem[i].className == "dropdown-item"){
+        menuItem[i].className = "dropdown-item active"
       }else{
         menuItem[i].className = "nav-link active"
       }
