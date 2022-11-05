@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   htmlLinks += '<li class="nav-item"><a href="/" class="nav-link">Home</a></li>';
   htmlLinks += '<li class="nav-item"><a href="/hobbies.html" class="nav-link">My Hobbies</a></li>';
+  htmlLinks += '<li class="nav-item"><a href="/calculator.html" class="nav-link">Calculator</a></li>';
   htmlLinks += '<li class="nav-item dropdown"><a href="/stories/" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">My Stories</a>';
   htmlLinks += '<ul class="dropdown-menu">';
   htmlLinks += '<li><a class="dropdown-item" href="/stories/lucas-the-elf.html">Lucas The Elf</a></li>';
