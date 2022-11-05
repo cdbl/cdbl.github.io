@@ -38,8 +38,10 @@
           <button type="button" class="btn btn-primary" id="calculate">Calculate</button>
          </div>
        </form>
-       <div id="ans"></div>
+       <div class="mt-3 alert alert-primary invisible" role="alert" id="ans"> 
+        </div>
     </div>
+    
 </main>
 
 
@@ -66,7 +68,10 @@
                 ans = a * b
                 break;
         } 
-        document.getElementById("ans").innerHTML = "<h1>The Answer is: " + ans + "</h1>"
+        var out = document.getElementById("ans")
+        out.innerHTML = "The Answer is: " + ans
+        out.classList.remove("invisible")
+
     }
 </script>
 <script src="/assets/js/myscript.js"></script>
