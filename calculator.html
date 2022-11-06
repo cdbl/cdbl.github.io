@@ -68,6 +68,7 @@
                 ans = a * b
                 break;
         } 
+        if(isNaN(ans)) ans ="undefined"
         var out = document.getElementById("ans")
         out.innerHTML = "The Answer is: " + ans
         out.classList.remove("invisible")
